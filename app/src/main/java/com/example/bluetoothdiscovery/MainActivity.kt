@@ -93,6 +93,7 @@ class MainActivity : ComponentActivity() {
                 }
                 else{
                     Toast.makeText(this@MainActivity,"BluetoothNotEnabled",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity,"suraj",Toast.LENGTH_LONG).show()
                    }
 
             }
