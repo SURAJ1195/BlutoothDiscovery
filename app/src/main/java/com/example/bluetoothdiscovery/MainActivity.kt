@@ -104,7 +104,7 @@ class MainActivity : ComponentActivity() {
                    Column(modifier = Modifier.fillMaxSize()) {
                        LazyColumn{
                           items(showListDevice){
-                              Text(text = it.name?:"kjkjlk")
+                              Text(text = it.name?:"no name")
                           }
                        }
 
