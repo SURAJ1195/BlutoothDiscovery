@@ -27,6 +27,8 @@ class BluetoothPairingReceiver(context:Context,private val onPaired:(Int?) -> Un
                     return
                 }
                 onPaired.invoke(device?.bondState)
+                val pin: String = "1234" // Set your PIN for pairing (this is an example)
+                device?.setPin(pin.toByteArray())
                device?.bondState
             }
             BluetoothDevice.ACTION_BOND_STATE_CHANGED ->{
