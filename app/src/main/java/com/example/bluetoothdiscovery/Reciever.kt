@@ -10,7 +10,7 @@ import android.util.Log
 
 class Reciever(context: Context, val list: MutableList<BluetoothDevice>,private val onDevice : (BluetoothDevice) -> Unit): BroadcastReceiver() {
 
-    @SuppressLint("MissingPermission")
+    @SuppressLint("MissingPermission", "SuspiciousIndentation")
     override fun onReceive(context: Context?, intent: Intent?) {
       val action=intent?.action
 
